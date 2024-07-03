@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Republic of Vickery</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            background-color: #e8e8e8;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -60px;
+        }
+        header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+        .t1 {
+            color: #677da9;
+            text-align: center;
+            font-size: 1.7em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 2px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            flex: 1; 
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .welcome {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .welcome h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service h3 {
+            margin-top: 0;
+            color: #87a4de;
+        }
+        .service p {
+            line-height: 1.6;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #f4f4f4;
+            color: rgb(85, 85, 85);
+            text-align: center;
+            padding: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), #666666, rgba(0, 0, 0, 0));
+        }
+        a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <img src="logo.jpg">
+            <h1 class="t1">Republic of Vickery</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="1.html">Articles</a>
+        <a href="2.html">Department</a>
+        <a href="3.html">About nation</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="welcome">
+            <h2>Decentralized country and no land entity</h2>
+            <p><strong>Our people are widely distributed around the world.</strong></p>
+            <p>Committed to providing citizens with efficient, transparent and convenient government services.</p>
+        </section>
+        <section id="services" class="services">
+            <a class="service" href="#" target="_blank">
+                <h3>Citizen services</h3>
+                <p>Provide basic citizen services such as household registration, ID cards, and passports.</p>
+            </a>
+            <a class="service" href="#" target="_blank">
+                <h3>Educational services</h3>
+                <p>Educational resource inquiry, online learning platform and education policy consultation.</p>
+            </a>
+            <a class="service" href="#" target="_blank">
+                <h3>Career services</h3>
+                <p>Join the public officials, We will conduct strict selection.</p>
+            </a>
+        </section>
+    </div>
+    <footer>
+        <hr>
+        <p>&copy; 2024 Republic of Vickery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
