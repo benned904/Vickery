@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header {
+            background-color: #e8e8e8;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -60px;
+        }
+        header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+        .t1 {
+            color: #677da9;
+            text-align: center;
+            font-size: 1.7em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 2px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            flex: 1; 
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        footer {
+            background-color: #f4f4f4;
+            color: rgb(85, 85, 85);
+            text-align: center;
+            padding: 5px 0;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), #666666, rgba(0, 0, 0, 0));
+        }
+        a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #495774;
+            font-weight: bold;
+        }
+
+        td {
+            color: #666;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                box-shadow: none;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <img src="logo.jpg">
+            <h1 class="t1">Vickery</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="1.html">Articles</a>
+        <a href="">Department</a>
+        <a href="3.html">About</a>
+    </nav>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Describe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>laboratory</td>
+                    <td>Responsible for the specific process operations of biological experiments.</td>
+                </tr>
+                <tr>
+                    <td>Information Engineering</td>
+                    <td>Responsible for the use of bioinformatics software tools and algorithms to analyze and process biological data.</td>
+                </tr>
+                <tr>
+                    <td>Electronic Engineering</td>
+                    <td>Responsible for researching and manufacturing electronic hardware equipment related to biology.</td>
+                </tr>
+                <tr>
+                    <td>Safety</td>
+                    <td>Responsible for the safety and environmental pollution control of biological experimental operations.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <hr>
+        <p>&copy; 2024 Vickery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
